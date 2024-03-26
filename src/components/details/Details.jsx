@@ -1,4 +1,8 @@
+import { useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { saveReadList } from "../../utility/localstorage";
 
 const Details = () => {
     const books = useLoaderData();
@@ -6,6 +10,28 @@ const Details = () => {
     const bookIdInt = parseInt(bookId);
     const book = books.find(book => book.bookId === bookIdInt);
     console.log(book);
+    const [clickCountRead, setClickCountRead] = useState(0);
+    const [clickCount, setClickCount] = useState(0);
+
+    const handleAddRead = () =>{
+        saveReadList(bookId);
+        setClickCountRead(clickCountRead + 1);
+        if (clickCountRead === 0){
+        toast('Books added to Read List')
+    }
+    else if (clickCountRead > 1){
+        toast.error('You have already read the book')
+    }
+    }
+    const handleAddWishlist = () =>{
+        setClickCount(clickCount + 1);
+        if (clickCount === 0){
+        toast('Books added to Wishlist')
+    }
+    else if (clickCount > 1){
+        toast.error('You have already added to Wishlist')
+    }
+    }
     return (
         <>
             <div className="w-[1170px] h-[790px] mt-10 bg-[#1313130D]">
@@ -70,11 +96,12 @@ const Details = () => {
                             </div>
                         </div>
                         <div className="absolute">
-                            <a className="btn w-[128px] h-[60px] mr-4 bg-[#23BE0A] text-[#FFFFFF]">Read</a>
-                            <a className="btn w-[128px] h-[60px] bg-[#59C6D2] text-[#FFFFFF]">Wishlist</a>
+                            <a onClick={handleAddRead} className="btn w-[128px] h-[60px] mr-4 text-black bg-white hover:bg-[#23BE0A] ">Read</a>
+                            <a onClick={handleAddWishlist} className="btn w-[128px] h-[60px] bg-[#59C6D2] text-black">Wishlist</a>
                         </div>
                     </div>
                 </div>
+                <ToastContainer />
             </div>
         </>
     );
