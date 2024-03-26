@@ -2,7 +2,8 @@ import { useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { saveReadList } from "../../utility/localstorage";
+import { saveReadList} from "../../utility/localstorage";
+import { saveWishList } from "../../utility/localstorage2";
 
 const Details = () => {
     const books = useLoaderData();
@@ -24,6 +25,7 @@ const Details = () => {
     }
     }
     const handleAddWishlist = () =>{
+        saveWishList(bookId);
         setClickCount(clickCount + 1);
         if (clickCount === 0){
         toast('Books added to Wishlist')

@@ -1,13 +1,13 @@
-const getStoredReadList =
+const getStoredList =
 () =>{
-    const storedReadList = localStorage.getItem('readList')
-    if(storedReadList){
-        return JSON.parse(storedReadList);
+    const storedList = localStorage.getItem('readList', 'wishList')
+    if(storedList){
+        return JSON.parse(storedList);
     }
     return[];
 }
 const saveReadList = bookId =>{
-    const storedReadLists = getStoredReadList();
+    const storedReadLists = getStoredList();
     const exists = storedReadLists.find(readId => readId === bookId);
     if(!exists){
         storedReadLists.push(bookId);
@@ -15,4 +15,4 @@ const saveReadList = bookId =>{
     }
 }
 
-export {getStoredReadList, saveReadList}
+export {getStoredList, saveReadList }
