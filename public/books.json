@@ -1,0 +1,80 @@
+[
+    {
+      "bookId": 1,
+      "bookName": "The Martian",
+      "author": "Andy Weir",
+      "image": "https://i.ibb.co/CnTvnmD/The-Martian.jpg",
+      "review": "In Andy Weir's 'The Martian', readers are propelled into the thrilling journey of survival alongside astronaut Mark Watney, who finds himself marooned on the desolate landscape of Mars. Weir's masterful narrative unfolds with palpable tension and unexpected humor, as Watney employs his ingenuity to navigate one perilous obstacle after another. With meticulous attention to scientific detail, Weir crafts a riveting story that not only immerses readers in the harsh realities of space exploration but also celebrates the indomitable spirit of human resilience.",
+      "totalPages": 369,
+      "rating": 4.5,
+      "category": "Science Fiction",
+      "tags": ["Survival", "Space Exploration"],
+      "publisher": "W. W. Norton & Company",
+      "yearOfPublishing": 2011
+    },
+    {
+      "bookId": 2,
+      "bookName": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "image": "https://i.ibb.co/cQ2MyvP/Pride-and-Prejudice.jpg",
+      "review": "Jane Austen's 'Pride and Prejudice' stands as a timeless masterpiece of wit and romance. Set against the backdrop of Regency-era England, the novel offers a sharp critique of societal norms and expectations, particularly concerning love and marriage. Through the spirited exchanges between Elizabeth Bennet and Mr. Darcy, Austen navigates themes of class, prejudice, and the pursuit of happiness with unparalleled finesse. With its sparkling dialogue and enduring characters, 'Pride and Prejudice' continues to captivate readers, inviting them into a world of timeless elegance and emotional resonance.",
+      "totalPages": 224,
+      "rating": 4.2,
+      "category": "Romance",
+      "tags": ["Classic", "Social Commentary"],
+      "publisher": "Penguin Classics",
+      "yearOfPublishing": 1813
+    },
+    {
+      "bookId": 3,
+      "bookName": "The Lord of the Rings",
+      "author": "J. R. R. Tolkien",
+      "image": "https://i.ibb.co/gWjkLm4/The-Lord-of-the-Rings.jpg",
+      "review": "J.R.R. Tolkien's 'The Lord of the Rings' stands as a monumental achievement in the realm of fantasy literature. Through the vast landscapes of Middle-earth and the epic journey of Frodo Baggins, Tolkien weaves a tapestry of heroism, friendship, and the eternal struggle between light and darkness. With its richly imagined world, complex characters, and profound themes, 'The Lord of the Rings' continues to captivate readers across generations, offering an immersive experience that transcends the boundaries of fantasy.",
+      "totalPages": 1136,
+      "rating": 4.8,
+      "category": "Fantasy",
+      "tags": ["Epic", "Adventure", "High Fantasy"],
+      "publisher": "Allen & Unwin",
+      "yearOfPublishing": 1954
+    },
+    {
+      "bookId": 4,
+      "bookName": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "image": "https://i.ibb.co/dk4W2pc/To-Kill-a-Mockingbird.jpg",
+      "review": "Harper Lee's 'To Kill a Mockingbird' is a timeless masterpiece that delves deep into the complexities of morality and racial injustice in the American South. Through the innocent eyes of Scout Finch, Lee navigates themes of compassion, empathy, and the pursuit of truth in a society fraught with prejudice and discrimination. Set against the backdrop of a racially charged trial, the novel challenges societal norms and exposes the harsh realities of injustice. With its poignant storytelling and unforgettable characters, 'To Kill a Mockingbird' remains as relevant and powerful today as it was upon its initial publication.",
+      "totalPages": 404,
+      "rating": 4.7,
+      "category": "Fiction",
+      "tags": ["Coming-of-Age", "Social Justice", "Classic"],
+      "publisher": "J. B. Lippincott & Co.",
+      "yearOfPublishing": 1960
+    },
+    {
+      "bookId": 5,
+      "bookName": "A Brief History of Time",
+      "author": "Stephen Hawking",
+      "image": "https://i.ibb.co/8dT92vb/A-Brief-History-of-Time.jpg",
+      "review": "Stephen Hawking's 'A Brief History of Time' is a captivating odyssey through the mysteries of the cosmos and the fundamental laws that govern our universe. With unparalleled clarity and insight, Hawking unravels the complexities of cosmology and quantum mechanics, inviting readers on a journey through space and time. From the origins of the universe to the enigmatic nature of black holes, 'A Brief History of Time' offers a profound exploration of the deepest questions of existence, challenging readers to expand their understanding of the universe and their place within it.",
+      "totalPages": 212,
+      "rating": 4.3,
+      "category": "Science",
+      "tags": ["Cosmology", "Physics", "Popular Science"],
+      "publisher": "Bantam Books",
+      "yearOfPublishing": 1988
+    },
+    {
+      "bookId": 6,
+      "bookName": "Dune",
+      "author": "Frank Herbert",
+      "image": "https://i.ibb.co/LJh4PL5/Dune.jpg",
+      "review": "Frank Herbert's 'Dune' is a masterful blend of epic storytelling, political intrigue, and ecological themes that transports readers to a meticulously crafted universe unlike any other. Set on the desert planet of Arrakis, the novel follows the epic journey of Paul Atreides as he navigates the treacherous sands of power and destiny. With its richly imagined world, complex characters, and thought-provoking themes, 'Dune' stands as a monumental achievement in science fiction literature, inspiring generations of readers to explore the depths of its intricacies and ponder the complexities of the human condition.",
+      "totalPages": 863,
+      "rating": 4.6,
+      "category": "Science Fiction",
+      "tags": ["Dystopian", "Politics", "Ecology"],
+      "publisher": "Chilton Books",
+      "yearOfPublishing": 1965
+    }
+]  
