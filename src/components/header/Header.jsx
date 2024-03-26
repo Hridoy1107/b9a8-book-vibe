@@ -3,9 +3,24 @@ import { NavLink } from "react-router-dom";
 
 const Header = () => {
     const links = <>
-        <li ><NavLink to="/" className=" btn w-[92px] h-[48px]"><span className=" text-lg text-[#23BE0A]">Home</span></NavLink></li>
-        <li><NavLink to="/lbs" className=" btn w-[148px] h-[48px]"><span className=" text-lg ">Listed Books</span></NavLink></li>
-        <li><NavLink to="/ptr" className=" btn w-[160px] h-[48px]"><span className=" text-lg ">Pages to Read</span></NavLink></li>
+        <li ><NavLink to="/" style={({ isActive }) => {
+            return {
+                fontWeight: isActive ? "bold" : "",
+                color: isActive ? "green" : "grey",
+            };
+        }} className=" btn w-[92px] h-[48px]"><span className=" text-lg ">Home</span></NavLink></li>
+        <li><NavLink to="/lbs" style={({ isActive }) => {
+            return {
+                fontWeight: isActive ? "bold" : "",
+                color: isActive ? "green" : "grey",
+            };
+        }} className=" btn w-[148px] h-[48px]"><span className=" text-lg ">Listed Books</span></NavLink></li>
+        <li><NavLink style={({ isActive }) => {
+            return {
+                fontWeight: isActive ? "bold" : "",
+                color: isActive ? "green" : "grey",
+            };
+        }} to="/ptr" className=" btn w-[160px] h-[48px]"><span className=" text-lg ">Pages to Read</span></NavLink></li>
     </>
     return (
         <>
