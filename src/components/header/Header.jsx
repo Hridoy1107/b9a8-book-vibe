@@ -15,12 +15,12 @@ const Header = () => {
                 color: isActive ? "green" : "grey",
             };
         }} className=" btn w-[148px] h-[48px]"><span className=" text-lg ">Listed Books</span></NavLink></li>
-        <li><NavLink style={({ isActive }) => {
+        <li><NavLink to="/ptr" style={({ isActive }) => {
             return {
                 fontWeight: isActive ? "bold" : "",
                 color: isActive ? "green" : "grey",
             };
-        }} to="/ptr" className=" btn w-[160px] h-[48px]"><span className=" text-lg ">Pages to Read</span></NavLink></li>
+        }} className=" btn w-[160px] h-[48px]"><span className=" text-lg ">Pages to Read</span></NavLink></li>
     </>
     return (
         <>

@@ -8,6 +8,7 @@ export default function ErrorPage() {
     <div className="my-32" id="error-page">
       <h1 className="font-bold text-6xl mb-8">Oops!</h1>
       <p className="font-bold text-3xl mb-6">Sorry, an unexpected error has occurred.</p>
+      <p className="font-bold text-3xl mb-6">404</p>
       <p>
         <i>{error.statusText || error.message}</i>
       </p>

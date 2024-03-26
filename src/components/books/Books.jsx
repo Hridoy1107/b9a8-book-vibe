@@ -1,10 +1,12 @@
 import PropTypes from 'prop-types';
 import { CiStar } from "react-icons/ci";
+import { NavLink } from 'react-router-dom';
 
 const Books = ({ book }) => {
-    const { bookName, tags, image, author, category, rating } = book
+    const {bookId, bookName, tags, image, author, category, rating } = book
     return (
         <>
+        <NavLink to={`/details/${bookId}`}>
             <div className="card h-[810px] w-[384px] bg-base-100 shadow-xl">
                 <img className="w-[320px] h-[550px]" src={image} alt="Shoes" />
                 <div className="card-body w-[320px] h-[156px]">
@@ -31,6 +33,7 @@ const Books = ({ book }) => {
                     </div>
                 </div>
             </div>
+            </NavLink>
         </>
     );
 };
