@@ -8,10 +8,10 @@ const Details = () => {
     console.log(book);
     return (
         <>
-            <div className="w-[1170px] h-[720px] mt-10 bg-[#1313130D]">
+            <div className="w-[1170px] h-[790px] mt-10 bg-[#1313130D]">
                 <div className="flex">
                     <div>
-                        <img className="ml-20 my-20 absolute h-[560px] w-[400px]" src={book.image} alt="" />
+                        <img className="ml-20 my-28 absolute h-[560px] w-[400px]" src={book.image} alt="" />
                     </div>
                     <div className="ml-[540px] mt-4">
                         <div className="w-[550px] h-[120px]">
@@ -38,40 +38,42 @@ const Details = () => {
                             <h2 className="card-title font-bold text-2xl h-[60px] w-[540px]">
                                 Tag
                             </h2>
-                            <div className="absolute ml-20 mt-4">
+                            <div className="absolute ml-20 mt-5">
                                 <div className="badge badge-accent mr-5">{book.tags[0]}</div>
                                 <div className="badge badge-accent ">{book.tags[1]}</div>
                             </div>
                         </div>
                         <hr />
-                        <div className="h-[240px]">
+                        <div className="h-[200px]">
                             <div className="overflow-x-auto">
                                 <table className="table">
                                     <tbody className="ml-1">
                                         <tr>
-                                            <th>Number of Pages:</th>
-                                            <td>{book.totalPages}</td>
+                                            <td>Number of Pages:</td>
+                                            <th>{book.totalPages}</th>
                                         </tr>
 
                                         <tr>
-                                            <th>Publisher:</th>
-                                            <td>{book.publisher}</td>
+                                            <td>Publisher:</td>
+                                            <th>{book.publisher}</th>
                                         </tr>
                                         <tr>
-                                            <th>Year of Publishing:</th>
-                                            <td>{book.yearOfPublishing}</td>
+                                            <td>Year of Publishing:</td>
+                                            <th>{book.yearOfPublishing}</th>
                                         </tr>
                                         <tr>
-                                            <th>Rating:</th>
-                                            <td>{book.rating}</td>
+                                            <td>Rating:</td>
+                                            <th>{book.rating}</th>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
                         </div>
+                        <div className="absolute">
+                            <a className="btn w-[128px] h-[60px] mr-4 bg-[#23BE0A] text-[#FFFFFF]">Read</a>
+                            <a className="btn w-[128px] h-[60px] bg-[#59C6D2] text-[#FFFFFF]">Wishlist</a>
+                        </div>
                     </div>
-
-
                 </div>
             </div>
         </>
