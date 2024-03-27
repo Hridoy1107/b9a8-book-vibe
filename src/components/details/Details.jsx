@@ -10,17 +10,20 @@ const Details = () => {
     const { bookId } = useParams();
     const bookIdInt = parseInt(bookId);
     const book = books.find(book => book.bookId === bookIdInt);
+    const [isReadListAdded, setIsReadListAdded] = useState(false);
     console.log(book);
     const [clickCountRead, setClickCountRead] = useState(0);
     const [clickCount, setClickCount] = useState(0);
 
     const handleAddRead = () =>{
         saveReadList(bookIdInt);
+        setIsReadListAdded(true);
         setClickCountRead(clickCountRead + 1);
         if (clickCountRead === 0){
         toast('Books added to Read List')
+        toast.error('You can not add it to Wishlist')
     }
-    else if (clickCountRead > 1){
+    else if (clickCountRead >= 1){
         toast.error('You have already read the book')
     }
     }
@@ -30,13 +33,13 @@ const Details = () => {
         if (clickCount === 0){
         toast('Books added to Wishlist')
     }
-    else if (clickCount > 1){
+    else if (clickCount >= 1){
         toast.error('You have already added to Wishlist')
     }
     }
     return (
         <>
-            <div className="w-[1170px] h-[790px] mt-10 bg-[#1313130D]">
+            <div className="w-[1170px] rounded-2xl h-[790px] mt-10 bg-[#1313130D]">
                 <div className="flex">
                     <div>
                         <img className="ml-20 my-28 absolute h-[560px] w-[400px]" src={book.image} alt="" />
@@ -99,7 +102,7 @@ const Details = () => {
                         </div>
                         <div className="absolute">
                             <a onClick={handleAddRead} className="btn w-[128px] h-[60px] mr-4 text-black bg-white hover:bg-[#23BE0A] ">Read</a>
-                            <a onClick={handleAddWishlist} className="btn w-[128px] h-[60px] bg-[#59C6D2] text-black">Wishlist</a>
+                            <a onClick={handleAddWishlist} disabled={isReadListAdded} className="btn w-[128px] h-[60px] bg-[#59C6D2] text-black">Wishlist</a>
                         </div>
                     </div>
                 </div>
