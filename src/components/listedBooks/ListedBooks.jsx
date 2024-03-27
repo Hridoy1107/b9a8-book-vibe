@@ -37,7 +37,7 @@ const ListedBooks = () => {
             }
             setReadAbleBook(readAbleBooks)
         }
-    }, [])
+    }, [books])
     return (
         <>
             <div className="w-[1170px] h-[100px] mt-10 bg-[#1313130D] rounded-2xl">

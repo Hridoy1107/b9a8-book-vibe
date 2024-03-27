@@ -21,6 +21,18 @@ const Header = () => {
                 color: isActive ? "green" : "grey",
             };
         }} className=" btn w-[160px] h-[48px]"><span className=" text-lg ">Pages to Read</span></NavLink></li>
+        <li ><NavLink to="/writer" style={({ isActive }) => {
+            return {
+                fontWeight: isActive ? "bold" : "",
+                color: isActive ? "green" : "grey",
+            };
+        }} className=" btn w-[92px] h-[48px]"><span className=" text-lg ">Writer</span></NavLink></li>
+        <li ><NavLink to="/query" style={({ isActive }) => {
+            return {
+                fontWeight: isActive ? "bold" : "",
+                color: isActive ? "green" : "grey",
+            };
+        }} className=" btn w-[92px] h-[48px]"><span className=" text-lg ">Query</span></NavLink></li>
     </>
     return (
         <>
@@ -29,7 +41,7 @@ const Header = () => {
                     <h1 className="text-3xl h-[48px] font-bold">Book Vibe</h1>
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1 gap-x-4">
+                    <ul className="menu menu-horizontal mr-10 px-1 gap-x-4">
                         {links}
                     </ul>
                 </div>

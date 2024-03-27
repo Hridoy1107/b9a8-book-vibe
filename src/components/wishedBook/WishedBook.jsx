@@ -28,7 +28,7 @@ const ListedBook = ({ book }) => {
                             <div className="flex w-[240px] h-[20px] gap-1"> <div className="mt-1 "><FaLocationDot /></div> <h1>Year of publishing: {yearOfPublishing}</h1></div>
                         </div>
                         <div className="flex">
-                            <div className="flex w-[220px] gap-1 ml-4"> <div className="mt-1 "><BsPerson /></div> <h1>Publisher: {publisher}</h1></div>
+                            <div className="flex w-[260px] gap-1 ml-4"> <div className="mt-1 "><BsPerson /></div> <h1>Publisher: {publisher}</h1></div>
                             <div className="flex w-[240px] gap-1"> <div className="mt-1 "><MdOutlineFindInPage /></div> <h1>Page {totalPages}</h1></div>
                         </div>
                         <hr className="mt-2 ml-4" />

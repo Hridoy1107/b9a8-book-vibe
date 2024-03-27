@@ -1,11 +1,11 @@
-
+import BChart from "../barChart/BChart";
 
 const PagesToRead = () => {
     return (
         <>
-        <div>
-            <h1>Hi to chart pages</h1>
-        </div>
+            <div className="mt-10">
+                <BChart></BChart>
+            </div>
         </>
     );
 };
