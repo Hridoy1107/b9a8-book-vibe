@@ -1,12 +1,11 @@
 const getStoredList =
 () =>{
-    const storedList = localStorage.getItem('readList', 'wishList')
+    const storedList = localStorage.getItem('wishList')
     if(storedList){
         return JSON.parse(storedList);
     }
     return[];
 }
-
 const saveWishList = bookId =>{
     const storedWishLists = getStoredList();
     const exists = storedWishLists.find(wishId => wishId === bookId);

@@ -25,7 +25,7 @@ const Details = () => {
     }
     }
     const handleAddWishlist = () =>{
-        saveWishList(bookId);
+        saveWishList(bookIdInt);
         setClickCount(clickCount + 1);
         if (clickCount === 0){
         toast('Books added to Wishlist')

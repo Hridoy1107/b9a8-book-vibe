@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
-import { getStoredList } from "../../utility/localStorage";
-import ListedBook from "../listedBook/ListedBook";
 import { NavLink } from "react-router-dom";
+import WishedBook from "../wishedBook/WishedBook";
+import { getStoredList } from "../../utility/localStorage2";
 
-const ListedBooks2 = () => {
+const ListedBooks = () => {
 
     const links = <>
         <li ><NavLink to="/lbs" style={({ isActive }) => {
@@ -14,7 +14,7 @@ const ListedBooks2 = () => {
             };
         }} className=" btn w-[160px] h-[48px]"><span className=" text-lg ">Read Books</span> </NavLink></li>
 
-        <li ><NavLink to="/lbs/wl" style={({ isActive }) => {
+        <li ><NavLink to="/wl" style={({ isActive }) => {
             return {
                 fontWeight: isActive ? "bold" : "",
                 color: isActive ? "red" : "grey",
@@ -23,19 +23,19 @@ const ListedBooks2 = () => {
     </>
     const books = useLoaderData();
 
-    const [readAbleBook, setReadAbleBook] = useState([]);
-    console.log(readAbleBook);
+    const [wishAbleBook, setWishAbleBook] = useState([]);
+    console.log(wishAbleBook);
     useEffect(() => {
         const storedBookIds = getStoredList();
         if (books.length > 0) {
-            const readAbleBooks = [];
+            const wishAbleBooks = [];
             for (const bookId of storedBookIds) {
-                const book = books.find(book => book.bookId === bookId)
+                const book = books.find(book => book.bookId == bookId)
                 if (book) {
-                    readAbleBooks.push(book)
+                    wishAbleBooks.push(book)
                 }
             }
-            setReadAbleBook(readAbleBooks)
+            setWishAbleBook(wishAbleBooks)
         }
     }, [])
     return (
@@ -68,11 +68,11 @@ const ListedBooks2 = () => {
             </div>
             <div>
                 {
-                    readAbleBook.map(book => <ListedBook key={book.bookId} book={book}></ListedBook>)
+                    wishAbleBook.map(book => <WishedBook key={book.bookId} book={book}></WishedBook>)
                 }
             </div>
         </>
     );
 };
 
-export default ListedBooks2;
+export default ListedBooks;

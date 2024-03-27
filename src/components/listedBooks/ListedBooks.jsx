@@ -14,7 +14,12 @@ const ListedBooks = () => {
             };
         }} className=" btn w-[160px] h-[48px]"><span className=" text-lg ">Read Books</span> </NavLink></li>
 
-        <li ><a className=" btn w-[160px] h-[48px]"><span className=" text-lg ">Wishlist Books</span> </a></li>
+        <li ><NavLink to="/wl" style={({ isActive }) => {
+            return {
+                fontWeight: isActive ? "bold" : "",
+                color: isActive ? "red" : "grey",
+            };
+        }} className=" btn w-[160px] h-[48px]"><span className=" text-lg ">Wishlist Books</span> </NavLink></li>
     </>
     const books = useLoaderData();
 

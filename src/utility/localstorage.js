@@ -1,6 +1,6 @@
 const getStoredList =
 () =>{
-    const storedList = localStorage.getItem('readList', 'wishList')
+    const storedList = localStorage.getItem('readList')
     if(storedList){
         return JSON.parse(storedList);
     }
