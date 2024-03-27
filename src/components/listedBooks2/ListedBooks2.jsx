@@ -4,7 +4,7 @@ import { getStoredList } from "../../utility/localStorage";
 import ListedBook from "../listedBook/ListedBook";
 import { NavLink } from "react-router-dom";
 
-const ListedBooks = () => {
+const ListedBooks2 = () => {
 
     const links = <>
         <li ><NavLink to="/lbs" style={({ isActive }) => {
@@ -14,7 +14,12 @@ const ListedBooks = () => {
             };
         }} className=" btn w-[160px] h-[48px]"><span className=" text-lg ">Read Books</span> </NavLink></li>
 
-        <li ><a className=" btn w-[160px] h-[48px]"><span className=" text-lg ">Wishlist Books</span> </a></li>
+        <li ><NavLink to="/lbs/wl" style={({ isActive }) => {
+            return {
+                fontWeight: isActive ? "bold" : "",
+                color: isActive ? "red" : "grey",
+            };
+        }} className=" btn w-[160px] h-[48px]"><span className=" text-lg ">Wishlist Books</span> </NavLink></li>
     </>
     const books = useLoaderData();
 
@@ -70,4 +75,4 @@ const ListedBooks = () => {
     );
 };
 
-export default ListedBooks;
+export default ListedBooks2;
