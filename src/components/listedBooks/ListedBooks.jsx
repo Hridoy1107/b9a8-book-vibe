@@ -37,7 +37,7 @@ const ListedBooks = () => {
             }
             setReadAbleBook(readAbleBooks)
         }
-    }, [books])
+    }, [books]);
     return (
         <>
             <div className="w-[1170px] h-[100px] mt-10 bg-[#1313130D] rounded-2xl">
@@ -59,8 +59,8 @@ const ListedBooks = () => {
                     </ul>
                 </div>
             </div>
-            <div className="mt-56">
-                <div className="navbar-center hidden lg:flex">
+            <div className="mt-52">
+                <div className="navbar-center flex">
                     <ul className="menu menu-horizontal px-1 gap-x-4">
                         {links}
                     </ul>

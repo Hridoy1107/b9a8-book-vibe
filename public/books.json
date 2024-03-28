@@ -10,7 +10,8 @@
       "category": "Science Fiction",
       "tags": ["Survival", "Space Exploration"],
       "publisher": "W. W. Norton & Company",
-      "yearOfPublishing": 2011
+      "yearOfPublishing": 2011,
+      "authorBio": "Andy Weir is an American former software engineer and science fiction author. His debut novel, The Martian, was a critical and commercial success, and was adapted into a 2015 film of the same name."
     },
     {
       "bookId": 2,
@@ -23,7 +24,8 @@
       "category": "Romance",
       "tags": ["Classic", "Social Commentary"],
       "publisher": "Penguin Classics",
-      "yearOfPublishing": 1813
+      "yearOfPublishing": 1813,
+      "authorBio": "Jane Austen was an English novelist known for her wit, social commentary, and romantic realism in her works. Her most famous novels include Pride and Prejudice, Sense and Sensibility, and Emma."
     },
     {
       "bookId": 3,
@@ -36,7 +38,8 @@
       "category": "Fantasy",
       "tags": ["Epic", "Adventure", "High Fantasy"],
       "publisher": "Allen & Unwin",
-      "yearOfPublishing": 1954
+      "yearOfPublishing": 1954,
+      "authorBio": "Frank Herbert was an American science fiction author best known for his epic novel Dune, which won the Hugo Award in 1965. He is also known for his other works in the Dune universe, as well as for his other science fiction novels and stories."
     },
     {
       "bookId": 4,
@@ -49,7 +52,8 @@
       "category": "Fiction",
       "tags": ["Coming-of-Age", "Social Justice", "Classic"],
       "publisher": "J. B. Lippincott & Co.",
-      "yearOfPublishing": 1960
+      "yearOfPublishing": 1960,
+      "authorBio": "Harper Lee was an American novelist who wrote the Pulitzer Prize-winning novel To Kill a Mockingbird."
     },
     {
       "bookId": 5,
@@ -62,7 +66,8 @@
       "category": "Science",
       "tags": ["Cosmology", "Physics", "Popular Science"],
       "publisher": "Bantam Books",
-      "yearOfPublishing": 1988
+      "yearOfPublishing": 1988,
+      "authorBio": "Stephen Hawking was an English theoretical physicist, cosmologist, and author who was born in Oxford, England, in 1942."
     },
     {
       "bookId": 6,
@@ -75,6 +80,7 @@
       "category": "Science Fiction",
       "tags": ["Dystopian", "Politics", "Ecology"],
       "publisher": "Chilton Books",
-      "yearOfPublishing": 1965
+      "yearOfPublishing": 1965,
+      "authorBio": "Frank Herbert was an American science fiction author."
     }
 ]  
