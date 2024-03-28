@@ -7,9 +7,9 @@ const Books2 = ({ book }) => {
     return (
         <>
         <NavLink to={`/details/${bookId}`}>
-            <div className=" hover:transform hover:translate-x-2 hover:translate-y-2 card h-[970px] w-[384px] bg-base-100 shadow-2xl hover:shadow-2xl">
-                <img className="w-[320px] h-[550px]" src={image} alt="Shoes" />
-                <div className="card-body w-[320px] h-[156px]">
+            <div className=" hover:transform hover:translate-x-2 hover:translate-y-2 card h-[900px] w-[384px] bg-base-100 shadow-2xl hover:shadow-2xl">
+                <img className="w-[320px] h-[420px]" src={image} alt="Shoes" />
+                <div className="card-body w-[320px] h-auto">
                     <div className="flex gap-3">
                         <div className="badge badge-accent ">{tags[0]}</div>
                         <div className="badge badge-accent ">{tags[1]}</div>
@@ -22,12 +22,12 @@ const Books2 = ({ book }) => {
                     </h2>
                 </div>
                 <hr className="mt-1" />
-                <div className="my-2 w-[320px] h-[350px]">
+                <div className="my-2 w-[320px] h-auto">
                     <h1 className="text-left font-semibold">About writer</h1>
                     <h1 className="text-left mt-1">{authorBio}</h1>
                 </div>
-                <hr className="mt-1" />
-                <div className="card-body w-[320px] h-[92px]">
+                <hr className="mt-2" />
+                <div className="card-body w-[320px] h-[90px]">
                     <div className="flex justify-between">
                         <h2 className="card-title font-medium text-xl">
                             {category}
