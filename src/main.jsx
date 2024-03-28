@@ -13,6 +13,8 @@ import ListedBooks2 from './components/listedBooks2/ListedBooks2';
 import PagesToRead from './components/pagesToRead/PagesToRead';
 import ErrorPage from './components/errorPage/ErrorPage';
 import Details from './components/details/Details';
+import Writer from './components/writer/Writer';
+import Query from './components/query/Query';
 
 const router = createBrowserRouter([
   {
@@ -43,6 +45,14 @@ const router = createBrowserRouter([
         path: "/details/:bookId",
         element: <Details></Details>,
         loader: () => fetch('../books.json')
+      },
+      {
+        path: "/writer",
+        element: <Writer></Writer>,
+      },
+      {
+        path: "/query",
+        element: <Query></Query>,
       },
     ]
   },

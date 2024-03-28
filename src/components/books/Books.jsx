@@ -7,7 +7,7 @@ const Books = ({ book }) => {
     return (
         <>
         <NavLink to={`/details/${bookId}`}>
-            <div className="card h-[810px] w-[384px] bg-base-100 shadow-xl">
+            <div className=" hover:transform hover:translate-x-2 hover:translate-y-2 card h-[810px] w-[384px] bg-base-100 shadow-2xl hover:shadow-2xl">
                 <img className="w-[320px] h-[550px]" src={image} alt="Shoes" />
                 <div className="card-body w-[320px] h-[156px]">
                     <div className="flex gap-3">

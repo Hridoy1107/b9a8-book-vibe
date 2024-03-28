@@ -48,11 +48,11 @@ const ListedBooks = () => {
                     <ul className="menu menu-horizontal px-1">
                         <li>
                             <details>
-                                <summary className="w-[190px] h-[56px] font-semibold text-3xl hover:bg-slate-300 bg-slate-300 text-[#23BE0A]">Sort By</summary>
+                                <summary className=" w-[190px] h-[56px] font-semibold text-3xl hover:bg-slate-300 bg-slate-300 text-[#23BE0A]">Sort By</summary>
                                 <ul className="w-[190px]">
-                                    <li><a>Rating</a></li>
-                                    <li><a>Number of Pages</a></li>
-                                    <li><a>Publish Year</a></li>
+                                    <li><a className="btn">Rating</a></li>
+                                    <li><a className="btn">Number of Pages</a></li>
+                                    <li><a className="btn">Publish Year</a></li>
                                 </ul>
                             </details>
                         </li>
